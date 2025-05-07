@@ -6,7 +6,7 @@ async function main() {
   const [sender, receiver] = await ethers.getSigners();
 
   // 이미 배포된 P2PRemittance 컨트랙트 주소 (배포할 때 출력된 주소 사용)
-  const contractAddress = "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0";
+  const contractAddress = "0x5fbdb2315678afecb367f032d93f642f64180aa3";
   const P2PRemittance = await ethers.getContractAt("P2PRemittance", contractAddress);
 
   // 1. sender가 입금
